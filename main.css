@@ -76,7 +76,7 @@ ul.navlist{
     font-weight: 500;
     transition: all .3s ease;
 }
-.btn:hover{
+.btn:hover, .btn-box .d-CV:hover{
     box-shadow: var(--hover-box-shadow);
 }
 .menu-icon{
@@ -176,8 +176,110 @@ section{
     margin-top: 2rem;
     margin-bottom: 6rem;
 }
+.btn-box .btn{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+.btn-box .d-CV{
+    background: var(--gradient-white-bg2);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #000;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: all .3s ease;
+}
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    height: 45px;
+}
+.social-media a{
+    width: 42px;
+    height: 42px;
+    font-size: 1.5rem;
+    color: var(--main-color);
+    background: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    border-radius: 50%;
+    z-index: 1;
+}
+.social-media a:hover{
+    background: var(--gradient-color-bg);
+    color: #fff;
+}
+.bg-icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-icon span{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-color-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: animate 1s linear infinite;
+}
+.img-hero{
+    position: relative;
+}
 .img-hero img{
+    position: relative;
     width: 400px;
+    height: auto;
+    z-index: 10;
+}
+.rotate-text{
+    position: absolute;
+    top: 4%;
+    left: -53%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 2rem;
+}
+.rotate-text span{
+    position: relative;
+    width: 442px;
+    height: 442px;
+    background: red;
+    border: 6px solid #eaeef0;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+}
+.rotate-text span::before{
+    content: "";
+    position: absolute;
+    inset: 20px;
+    background: #00aaff;
+    border-radius: 50%;
+    z-index: 1;
+}
+.rotate-text span i{
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-color-bg);
+    filter: blur(5px);
+    animation: animate 2s linear infinite;
+}
+.rotate-text .text{
+    position: absolute;
+    width: 490px;
+    height: 490px;
 }
 @keyframes moveText{
     0%,10%,100%{
@@ -197,5 +299,13 @@ section{
     }
     75%,85%{
         opacity: 0;
+    }
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }
