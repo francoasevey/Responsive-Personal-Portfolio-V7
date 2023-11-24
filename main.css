@@ -22,7 +22,7 @@ a{
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: var(--bg-color);
+    background: var(--bg-color);
     overflow-x: hidden;
 }
 header{
@@ -57,7 +57,7 @@ ul.navlist{
     display: inline-flex;
     font-weight: 600;
 }
-.navlist a:hover, .navlist li a.active{
+.navlist li a:hover, .navlist li a.active{
     background: var(--gradient-color-bg);
     -webkit-background-clip: text;
     color: transparent;
@@ -234,6 +234,8 @@ section{
 }
 .img-hero{
     position: relative;
+    animation: floatImage 4s ease-in-out infinite;
+    animation-delay: 3s;
 }
 .img-hero img{
     position: relative;
@@ -244,7 +246,7 @@ section{
 .rotate-text{
     position: absolute;
     top: 4%;
-    left: -53%;
+    left: -53px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,6 +282,18 @@ section{
     position: absolute;
     width: 490px;
     height: 490px;
+    background: #f2f6fb;
+    border-radius: 50%;
+    box-shadow: 0 1px 6px 5.94px rgba(0,0,0,0.2);
+    animation: rotateText 30s linear infinite;
+}
+.text b{
+    position: absolute;
+    transform-origin: 0 247px;
+    display: block;
+    top: 0;
+    left: 50%;
+    font-size: 1.2rem;
 }
 @keyframes moveText{
     0%,10%,100%{
@@ -307,5 +321,13 @@ section{
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+@keyframes rotateText{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
     }
 }
