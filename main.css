@@ -432,6 +432,93 @@ section{
     border-radius: 50%;
     animation: animate 1s linear infinite;
 }
+.servicesItem h3{
+    margin: 1rem 0 0.5rem;
+}
+.servicesItem p{
+    margin-bottom: 1.5rem;
+    font-size: .9rem;
+    color: var(--font-color);
+}
+.services .readMore{
+    background: var(--gradient-white-bg2);
+    box-shadow: rgba(0, 0, 0, 0.1)0px 1px 3px 0, rgba(0, 0, 0, 0.6)0px 1px 2px 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    margin-right: .8rem;
+    cursor: pointer;
+}
+.proposal{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: var(--gradient-white-bg2);
+    box-shadow: rgba(0, 0, 0, 0.1)0px 1px 3px 0, rgba(0, 0, 0, 0.6)0px 1px 2px 0px;
+    margin-top: 8rem;
+    border-radius: 10px;
+    padding: 0rem 2rem;
+    z-index: 1;
+}
+.proposal img{
+    width: 40vw;
+    height: auto;
+    margin: -4rem 0 0;
+    z-index: 2;
+}
+.services .text-box span{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.services .text-box h3{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+.services .text-box .btn{
+    padding: 10px 20px;
+}
+.services .showcase .ring{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 2%;
+    left: -3%;
+}
+.services .showcase .circle{
+    position: absolute;
+    width: 70px;
+    height: auto;
+    top: 2%;
+    right: 6%;
+    filter: blur(3px);
+}
+.services .showcase .circle2{
+    position: absolute;
+    width: 40px;
+    height: auto;
+    filter: blur(3px);
+}
+.services .showcase .circle3{
+    position: absolute;
+    width: 70px;
+    height: auto;
+    filter: blur(3px);
+    bottom: 36%;
+    left: 22%;
+}
+.services .showcase .half-ring{
+    position: absolute;
+    width: 120px;
+    height: auto;
+    bottom: 4%;
+    right: 6%;
+}
 @keyframes moveText{
     0%,10%,100%{
         background-position: -24rem 0;
