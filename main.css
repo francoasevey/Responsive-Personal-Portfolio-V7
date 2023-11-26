@@ -352,6 +352,22 @@ section{
     cursor: pointer;
     transition: all .3s ease;
 }
+.about-btn button.active{
+    background: var(--gradient-color-bg);
+    color: #fff;
+}
+.text-box{
+    margin: .8rem 0;
+}
+.content-btn > .content:not(:first-child){
+    display: none;
+}
+.about-btn button:hover{
+    box-shadow: var(--hover-box-shadow);
+}
+.cvContent{
+    margin-top: 1.5rem;
+}
 @keyframes moveText{
     0%,10%,100%{
         background-position: -24rem 0;
