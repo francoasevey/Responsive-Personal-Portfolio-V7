@@ -638,6 +638,27 @@ section{
     border-radius: 25px !important;
     background: var(--gradient-color-bg) !important;
 }
+.blog .showcase img{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+}
+.blog .showcase .circle{
+    filter: blur(3px);
+}
+.blog .showcase .ring{
+    top: 0;
+    left: -1%;
+}
+.blog .showcase .half-ring{
+    top: 10%;
+    right: 10%;
+}
+.blog .showcase .second-circle{
+    top: 30%;
+    left: 2%;
+    filter: blur(1px);
+}
 @keyframes moveText{
     0%,10%,100%{
         background-position: -24rem 0;
