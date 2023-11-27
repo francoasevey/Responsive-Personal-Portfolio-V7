@@ -29,3 +29,26 @@ var mixer = mixitup('.portfolio-gallery', {
         duration: 500
     }
 })
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay:3000,
+        disableOnInteraction:false,
+    },
+    breakpoints:{
+        576:{
+            slidesPerView:2,
+            spaceBetween:10,
+        },
+        1200:{
+            slidesPerView:3,
+            spaceBetween:20,
+        },
+    }
+});

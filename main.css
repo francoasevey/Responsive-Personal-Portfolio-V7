@@ -584,6 +584,60 @@ section{
     color: var(--font-color);
     margin: .5rem 0 1rem 0;
 }
+.blog-box{
+    padding: .5rem !important;
+}
+.blog{
+    position: relative;
+}
+.cards{
+    padding: 1rem .1rem;
+}
+.card{
+    background: var(--gradient-white-bg2);
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.card-top{
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+    display: block;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+.card-info{
+    padding-bottom: .5rem;
+}
+.card-info h2{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.data{
+    display: block;
+    margin: .2rem 0;
+}
+.card .excerpt{
+    color: var(--font-color);
+    margin-bottom: 1.5rem;
+}
+.swiper-pagination{
+    position: relative !important;
+    margin-top: 3rem;
+}
+.swiper-pagination-bullet{
+    height: 10px !important;
+    width: 30px !important;
+    border-radius: 25px !important;
+    background: var(--gradient-color-bg) !important;
+}
 @keyframes moveText{
     0%,10%,100%{
         background-position: -24rem 0;
