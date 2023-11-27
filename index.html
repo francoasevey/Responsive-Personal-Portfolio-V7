@@ -220,14 +220,14 @@
             <span>what i will do for you</span>
         </div>
         <div class="fillter-buttons">
-            <button>All Work</button>
-            <button>Web Development</button>
-            <button>UI/UX Design</button>
-            <button>Branding Design</button>
+            <button class="button mixitup-control-active" data-filter="all">All Work</button>
+            <button class="button" data-filter=".web">Web Development</button>
+            <button class="button" data-filter=".uiux">UI/UX Design</button>
+            <button class="button" data-filter=".branding">Branding Design</button>
         </div>
 
         <div class="portfolio-gallery">
-            <div class="portfolio-box">
+            <div class="portfolio-box mix uiux">
                 <div class="portfolio-content">
                     <h3>UI/UX Design</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, praesentium.</p>
@@ -238,7 +238,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="portfolio-box mix web">
                 <div class="portfolio-content">
                     <h3>Web Design</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, praesentium.</p>
@@ -249,7 +249,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="portfolio-box mix web">
                 <div class="portfolio-content">
                     <h3>Web Development</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, praesentium.</p>
@@ -260,7 +260,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="portfolio-box mix web">
                 <div class="portfolio-content">
                     <h3>Web Development</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, praesentium.</p>
@@ -271,7 +271,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="portfolio-box mix uiux">
                 <div class="portfolio-content">
                     <h3>UI/UX Design</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, praesentium.</p>
@@ -282,7 +282,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="portfolio-box mix branding">
                 <div class="portfolio-content">
                     <h3>Web Development</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, praesentium.</p>
@@ -294,6 +294,8 @@
             </div>
         </div>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
