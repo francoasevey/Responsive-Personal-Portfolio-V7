@@ -812,3 +812,8 @@ h2.counter span{
         transform: rotate(0deg);
     }
 }
+@keyframes progress{
+    to{
+        stroke-dashoffset: var(--target);
+    }
+}
