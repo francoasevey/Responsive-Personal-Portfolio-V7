@@ -776,6 +776,13 @@ h2.counter span{
     font-size: 1rem;
     font-weight: 500;
 }
+
+footer{
+    text-align: center;
+    margin: 0 8%;
+    padding: 2rem 0;
+    border-top: 2px solid #e8e1e1;
+}
 @keyframes moveText{
     0%,10%,100%{
         background-position: -24rem 0;
