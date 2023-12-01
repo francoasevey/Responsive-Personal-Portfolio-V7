@@ -1,6 +1,14 @@
 let menuIcon = document.querySelector(".menu-icon");
+let navlist = document.querySelector(".navlist");
 menuIcon.addEventListener("click",()=>{
-    menuIcon.classList.toggle("active")
+    menuIcon.classList.toggle("active");
+    navlist.classList.toggle("active");
+    document.body.classList.toggle("open");
+});
+navlist.addEventListener("click",()=>{
+    menuIcon.classList.remove("active");
+    navlist.classList.remove("active");
+    document.body.classList.remove("open");
 })
 
 let text = document.querySelector(".text p");
