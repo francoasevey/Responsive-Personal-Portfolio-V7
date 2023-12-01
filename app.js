@@ -136,3 +136,15 @@ function activeMenu() {
 }
 activeMenu();
 window.addEventListener("scroll",activeMenu);
+
+ScrollReveal({
+    distance:"90px",
+    duration:2000,
+    delay:200,
+    reset:true,
+});
+
+ScrollReveal().reveal('.hero-info,.main-text,.proposal', {origin: "top"});
+ScrollReveal().reveal('.about-img,.fillter-buttons,.contact-info', {origin: "left"});
+ScrollReveal().reveal('.about-content,.skills', {origin: "right"});
+ScrollReveal().reveal('.allServices,.portfolio-gallery,.blog-box,.footer,.img-hero', {origin: "bottom"});
